@@ -3,8 +3,7 @@
 // ============================================
 // TODO: Replace with your deployed Vercel API URL (no trailing slash).
 // Example: "https://your-portfolio-api.vercel.app"
-const API_BASE_URL = "https://elaroui-mohammed-f4du.vercel.app/";
-
+const API_BASE_URL = "https://portfolio-three-cyan-31.vercel.app";
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ============================================
