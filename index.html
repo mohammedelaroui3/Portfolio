@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Portfolio of Mohammed Elaroui, a software developer building fast, responsive web applications.">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Mohammed Elaroui | Software Developer"/>
+<meta property="og:description" content="Portfolio of Mohammed Elaroui, a software developer building fast, responsive web applications.">
+<meta property="og:image" content="https://i.postimg.cc/BjTpc0gF/000.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+<title>Simo</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+
+<body>
+        
+         <header>
+      <nav>
+          <a href="#" class="logo">
+              <span>e</span>
+              <span>l</span>
+              <span>a</span>
+              <span>r</span>
+              <span>o</span>
+              <span>u</span>
+              <span>i</span>
+          </a> 
+
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+
+          <section class="nav-links" id="nav-links">
+              <a href="#about" class="link">About Me</a>
+              <a href="#projects" class="link">Projects</a>
+              <a href="#services" class="link">Services</a>
+              <a href="#contact" class="link">Contact</a>
+              
+              <div id="dark-mode-toggle" class="toggle-container" aria-label="Toggle Dark Mode">
+                  <div class="mobius-toggle">
+                      <div class="fissure-light"></div>
+                      <div class="fissure-dark"></div>
+                      <div class="indicator">
+                          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="5"></circle>
+                              <line x1="12" y1="1" x2="12" y2="3"></line>
+                              <line x1="12" y1="21" x2="12" y2="23"></line>
+                              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                              <line x1="1" y1="12" x2="3" y2="12"></line>
+                              <line x1="21" y1="12" x2="23" y2="12"></line>
+                              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                          </svg>
+                          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                          </svg>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </nav>
+  </header>
+
+  <main id="about">
+      <div class="art">
+<img class="avatar" src="https://i.postimg.cc/BjTpc0gF/000.jpg" alt="picture of Mohammed Elaroui"/>
+            <p>Hello, I am <a href="http://www.youtube.com/@ElarouiMohammed" target="_blank" class="lien">Mohammed Elaroui</a>, a Software Developer focused on the future. My mission is to never stop learning and to find my place within high-performing support teams and tech communities. By combining my creative drive with the collective intelligence of the developer community, I aim to build software that is always one step ahead of the curve.</p>      </div>
+
+      <section id="projects" class="projects">
+          <h1 class="pro">My Projects</h1>
+          <div class="pf">
+              <div class="pfe">
+                  <h2>Next.js Developer Portfolio</h2>
+                  <p>A modern web application built to showcase my development journey, focusing on speed and responsive design.</p>
+                  <ul>
+                      <li>Next.js</li>
+                      <li>Tailwind CSS</li>
+                      <li>Vercel</li>
+                  </ul>
+              </div>
+              <div class="pfa">
+                  <h2>Automated Student Registration System</h2>
+                  <p>A desktop solution developed in Visual Basic (VB) to automate school enrollments and database management.</p>
+                  <ul class="tech-stack">
+                      <li>Visual Basic</li>
+                      <li>SQL / MS Access</li>
+                      <li>Desktop UI</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+      <section id="services" class="services">
+          <h1 class="ser">The Services I Provide</h1> 
+          <div class="serv1">
+              <h2>Minimalist & Punchy (Best for Icons)</h2>
+              <ul>
+                  <li>Responsive Web Development: Building seamless experiences across all devices.</li>
+                  <li>UI/UX & Motion Design: Creating high-fidelity interfaces with engaging animations.</li>
+                  <li>E-commerce Solutions: Developing full-scale online stores tailored to your business.</li>
+                  <li>Custom SVG & Brand Assets: Crafting scalable, lightweight vector graphics and icons.</li>
+              </ul>
+          </div>
+      </section>
+
+      <div class="form1">
+          <h1 id="contact">Contact Me</h1>
+          <form id="contact-form" class="form2">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+              <button class="submit" type="submit">Send Message</button>
+          </form>
+      </div>
+  </main>
+
+  <footer class="copy">
+      <div class="cop">@2026 Mohammed Elaroui</div>
+  </footer>
+
+  <div id="notification"></div>
+
+
+</body>
+</html>
