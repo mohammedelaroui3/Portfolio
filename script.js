@@ -3,6 +3,13 @@
 // ============================================
 // TODO: Replace with your deployed Vercel API URL (no trailing slash).
 // Example: "https://your-portfolio-api.vercel.app"
+
+
+
+
+
+
+
 const API_BASE_URL = "https://portfolio-three-cyan-31.vercel.app";
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -68,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLinks.classList.remove('open');
                 menuBtn.classList.remove('open');
                 menuBtn.setAttribute('aria-expanded', 'false');
+                
             });
         });
     }
@@ -75,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ============================================
        3. ACTIVE NAV LINK ON SCROLL
     ============================================ */
+
     const sections = document.querySelectorAll('main [id]');
     const navAnchors = document.querySelectorAll('.nav-links .link');
 
