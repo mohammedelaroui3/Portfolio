@@ -127,6 +127,7 @@
             justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
+            
         }
 
         a {
@@ -603,6 +604,11 @@
         .cop {
             color: var(--text-color);
             font-size: 0.9rem;
+        }
+
+        .cont{
+            text-align: center;
+            padding-bottom: 8%;
         }
 
         /* Responsive Breakpoints */

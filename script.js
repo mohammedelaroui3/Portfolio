@@ -84,24 +84,29 @@ document.addEventListener('DOMContentLoaded', () => {
        3. ACTIVE NAV LINK ON SCROLL
     ============================================ */
 
-    const sections = document.querySelectorAll('main [id]');
     const navAnchors = document.querySelectorAll('.nav-links .link');
-
+    const sections = Array.from(navAnchors)
+        .map((a) => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+ 
     if (sections.length && navAnchors.length && 'IntersectionObserver' in window) {
+        const setActive = (id) => {
+            navAnchors.forEach((a) => {
+                a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+            });
+        };
+ 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    navAnchors.forEach((a) => {
-                        a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
-                    });
+                    setActive(entry.target.id);
                 }
             });
         }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
-
+ 
         sections.forEach((section) => observer.observe(section));
     }
-
+ 
     /* ============================================
        4. CONTACT FORM → VERCEL API → MONGODB
     ============================================ */
