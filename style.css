@@ -579,22 +579,20 @@
 
         /* --- FOOTER --- */
         .copy {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            position:fixed;
-            bottom:0;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 30px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            z-index: 90;
-        }
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 90;
+}
 
         .dark-theme .copy {
             background: rgba(0, 0, 0, 0.3);
